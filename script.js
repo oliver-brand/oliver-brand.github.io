@@ -48,6 +48,27 @@ function showNext() {
 /* Initialise everything once the page has loaded */
 document.addEventListener('DOMContentLoaded', function () {
 
+    /* --- DROPDOWN NAVIGATION --- */
+    const navDropdown     = document.querySelector('.nav-dropdown');
+    const dropdownToggle  = document.querySelector('.nav-dropdown-toggle');
+
+    if (navDropdown && dropdownToggle) {
+
+        /* Toggle open/closed when the button is clicked */
+        dropdownToggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            navDropdown.classList.toggle('open');
+        });
+
+        /* Close the dropdown if the user clicks anywhere outside it */
+        document.addEventListener('click', function (e) {
+            if (!navDropdown.contains(e.target)) {
+                navDropdown.classList.remove('open');
+            }
+        });
+    }
+
+
     galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
 
     /* Click any photo to open it full screen */

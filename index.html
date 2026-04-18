@@ -13,14 +13,21 @@
 
     <!-- ============================================================
          NAVIGATION BAR
-         To add a new trip page: copy one of the <li> lines below
-         and change the href and link text to match your new page.
+         To add a new trip: copy one of the <li> lines inside the
+         dropdown-menu and update the href and link text.
          ============================================================ -->
     <nav class="navbar">
         <a href="index.html" class="nav-brand">Oliver Brand</a>
         <ul class="nav-links">
-            <li><a href="boa.html">Bradford on Avon</a></li>
-            <!-- ADD NEW TRIP LINKS HERE — copy the line above -->
+            <li class="nav-dropdown">
+                <button class="nav-dropdown-toggle">
+                    Gallery <span class="dropdown-arrow">&#9660;</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="boa.html">Bradford on Avon</a></li>
+                    <!-- ADD NEW TRIPS HERE — copy the line above -->
+                </ul>
+            </li>
         </ul>
     </nav>
 
