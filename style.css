@@ -399,7 +399,7 @@ a {
     }
 
     .gallery-container {
-        padding: 16px 12px 0 0;
+        padding: 16px 12px 0 12px;
     }
 
     .gallery {
