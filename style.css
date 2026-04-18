@@ -193,7 +193,7 @@ a {
    ================================================ */
 
 .gallery-container {
-    padding: 0;
+    padding: 20px 16px 0 0;
 }
 
 
@@ -201,7 +201,7 @@ a {
 
 .trip-header {
     margin-bottom: 32px;
-    padding: 40px 40px 32px;
+    padding: 24px 40px 32px;
     border-bottom: 1px solid #e8e8e8;
 }
 
@@ -361,7 +361,7 @@ a {
     }
 
     .gallery-container {
-        padding: 0;
+        padding: 16px 12px 0 0;
     }
 
     .gallery {
@@ -399,7 +399,7 @@ a {
     }
 
     .gallery-container {
-        padding: 0;
+        padding: 16px 12px 0 0;
     }
 
     .gallery {
@@ -418,6 +418,6 @@ a {
     }
 
     .gallery-container {
-        padding: 0;
+        padding: 16px 12px 0 0;
     }
 }
