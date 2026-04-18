@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Woods — Oliver Brand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+    <nav class="sidebar" id="sidebar">
+
+        <a href="index.html" class="nav-brand">Oliver<br>Brand</a>
+
+        <ul class="nav-links">
+            <li class="nav-dropdown">
+                <button class="nav-dropdown-toggle">
+                    Gallery <span class="dropdown-arrow">&#9660;</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="boa.html">Bradford on Avon</a></li>
+                    <li><span class="dropdown-section">MTB Adventures</span></li>
+                    <li class="dropdown-sub"><a href="mtb-adventures.html">Forest of Dean</a></li>
+                    <li class="dropdown-sub"><a href="box-woods.html" class="active">Box Woods</a></li>
+                    <!-- ADD NEW CATEGORIES OR TRIPS HERE -->
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <main class="gallery-container">
+
+        <header class="trip-header">
+            <h1>Box Woods</h1>
+            <p>
+                Mountain biking through the woodland trails at Box, Wiltshire.
+            </p>
+        </header>
+
+        <div class="gallery">
+
+            <!-- PHOTO 1 -->
+            <figure class="gallery-item"
+                    data-src="https://res.cloudinary.com/drdp2olah/image/upload/q_auto/f_auto/v1776550401/IMG_1975_e4e80o.jpg"
+                    data-caption="Box Woods">
+                <img src="https://res.cloudinary.com/drdp2olah/image/upload/q_auto/f_auto/v1776550401/IMG_1975_e4e80o.jpg"
+                     alt="Mountain biking at Box Woods"
+                     loading="lazy">
+            </figure>
+
+
+            <!-- PHOTO 2 -->
+            <figure class="gallery-item"
+                    data-src="https://res.cloudinary.com/drdp2olah/image/upload/q_auto/f_auto/v1776550400/IMG_1974_o9iril.jpg"
+                    data-caption="Box Woods">
+                <img src="https://res.cloudinary.com/drdp2olah/image/upload/q_auto/f_auto/v1776550400/IMG_1974_o9iril.jpg"
+                     alt="Mountain biking at Box Woods"
+                     loading="lazy">
+            </figure>
+
+
+            <!-- ADD MORE PHOTOS BY COPYING A <figure> BLOCK ABOVE -->
+
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <p>&copy; 2026 Oliver Brand</p>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <button class="lightbox-prev" id="lightbox-prev">&#8592;</button>
+        <button class="lightbox-next" id="lightbox-next">&#8594;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img">
+            <p class="lightbox-caption" id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
