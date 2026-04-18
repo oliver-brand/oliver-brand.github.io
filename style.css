@@ -367,6 +367,28 @@ a {
 
 
 /* ================================================
+   DESKTOP — DROPDOWN ALWAYS OPEN
+   On desktop the gallery links are always visible
+   in the sidebar. Toggle only activates on mobile.
+   ================================================ */
+
+@media (min-width: 769px) {
+    .dropdown-menu {
+        max-height: 800px;
+    }
+
+    .dropdown-arrow {
+        display: none;
+    }
+
+    .nav-dropdown-toggle {
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
+
+/* ================================================
    RESPONSIVE — TABLET (sidebar narrows)
    ================================================ */
 
