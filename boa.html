@@ -12,12 +12,23 @@
 <body>
 
     <!-- ============================================================
-         NAVIGATION BAR
-         Keep this the same as index.html.
+         MOBILE HAMBURGER BUTTON
+         This only appears on phones and small screens.
+         You do not need to edit this.
+         ============================================================ -->
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+
+    <!-- ============================================================
+         SIDEBAR NAVIGATION
+         Keep this identical to index.html.
          Add new trip links here whenever you add a new trip page.
          ============================================================ -->
-    <nav class="navbar">
-        <a href="index.html" class="nav-brand">Oliver Brand</a>
+    <nav class="sidebar" id="sidebar">
+
+        <a href="index.html" class="nav-brand">Oliver<br>Brand</a>
+
         <ul class="nav-links">
             <li class="nav-dropdown">
                 <button class="nav-dropdown-toggle">
@@ -29,6 +40,7 @@
                 </ul>
             </li>
         </ul>
+
     </nav>
 
 
@@ -37,15 +49,13 @@
         <!-- ============================================================
              TRIP HEADER
              Edit the title and description below to describe this trip.
-             The description can be as brief or as detailed as you like.
              ============================================================ -->
         <header class="trip-header">
             <h1>Bradford on Avon</h1>
             <p>
-                <!-- EDIT THIS TEXT: Write a short description of your visit.
+                <!-- EDIT THIS TEXT: replace with your own description.
                      Example: "A quiet afternoon exploring the Saxon church,
-                     tithe barn, and riverside walks in Bradford on Avon,
-                     Wiltshire — March 2025." -->
+                     tithe barn, and riverside walks — March 2025." -->
                 Write your description of this trip here. A sentence or two
                 giving family and friends a little context is usually perfect.
             </p>
@@ -62,7 +72,7 @@
              5. Write a short caption in the data-caption field
              6. Write a brief description in the alt field
 
-             The photos appear in the order listed below.
+             Photos appear in the order listed below.
              To change the order, move a <figure> block up or down.
              To remove a photo, delete its entire <figure> block.
              ============================================================ -->

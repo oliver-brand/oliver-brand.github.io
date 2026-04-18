@@ -12,12 +12,24 @@
 <body>
 
     <!-- ============================================================
-         NAVIGATION BAR
-         To add a new trip: copy one of the <li> lines inside the
-         dropdown-menu and update the href and link text.
+         MOBILE HAMBURGER BUTTON
+         This only appears on phones and small screens.
+         You do not need to edit this.
          ============================================================ -->
-    <nav class="navbar">
-        <a href="index.html" class="nav-brand">Oliver Brand</a>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+
+    <!-- ============================================================
+         SIDEBAR NAVIGATION
+         To add a new trip page: copy one of the <li> lines inside
+         the dropdown-menu and update the href and link text.
+         The Gallery dropdown will automatically expand to fit.
+         ============================================================ -->
+    <nav class="sidebar" id="sidebar">
+
+        <a href="index.html" class="nav-brand">Oliver<br>Brand</a>
+
         <ul class="nav-links">
             <li class="nav-dropdown">
                 <button class="nav-dropdown-toggle">
@@ -29,14 +41,13 @@
                 </ul>
             </li>
         </ul>
+
     </nav>
 
 
     <!-- ============================================================
          LANDING PAGE PHOTO GRID
          This page shows your curated selection of favourite images.
-         You choose which photos appear here — they do not have to
-         match your trip pages exactly.
 
          HOW TO ADD A PHOTO:
          1. Upload the photo to Cloudinary
@@ -44,9 +55,9 @@
          3. Copy one <figure> block below
          4. Paste your Cloudinary URL into BOTH places marked [URL]
          5. Write a short caption in the data-caption field
-         6. Write a brief description in the alt field (for accessibility)
+         6. Write a brief description in the alt field
 
-         The photos will appear in the order listed below.
+         Photos appear in the order listed below.
          To change the order, move a <figure> block up or down.
          To remove a photo, delete its entire <figure> block.
          ============================================================ -->
