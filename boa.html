@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bradford on Avon — Oliver Brand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============================================================
+         NAVIGATION BAR
+         Keep this the same as index.html.
+         Add new trip links here whenever you add a new trip page.
+         ============================================================ -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">Oliver Brand</a>
+        <ul class="nav-links">
+            <li><a href="boa.html" class="active">Bradford on Avon</a></li>
+            <!-- ADD NEW TRIP LINKS HERE — copy the line above -->
+        </ul>
+    </nav>
+
+
+    <main class="gallery-container">
+
+        <!-- ============================================================
+             TRIP HEADER
+             Edit the title and description below to describe this trip.
+             The description can be as brief or as detailed as you like.
+             ============================================================ -->
+        <header class="trip-header">
+            <h1>Bradford on Avon</h1>
+            <p>
+                <!-- EDIT THIS TEXT: Write a short description of your visit.
+                     Example: "A quiet afternoon exploring the Saxon church,
+                     tithe barn, and riverside walks in Bradford on Avon,
+                     Wiltshire — March 2025." -->
+                Write your description of this trip here. A sentence or two
+                giving family and friends a little context is usually perfect.
+            </p>
+        </header>
+
+
+        <!-- ============================================================
+             PHOTO GRID
+             HOW TO ADD A PHOTO:
+             1. Upload the photo to Cloudinary
+             2. Copy the URL Cloudinary gives you
+             3. Copy one <figure> block below
+             4. Paste your Cloudinary URL into BOTH places marked [URL]
+             5. Write a short caption in the data-caption field
+             6. Write a brief description in the alt field
+
+             The photos appear in the order listed below.
+             To change the order, move a <figure> block up or down.
+             To remove a photo, delete its entire <figure> block.
+             ============================================================ -->
+        <div class="gallery">
+
+
+            <!-- PHOTO 1 — replace [URL] with your Cloudinary link -->
+            <figure class="gallery-item"
+                    data-src="[URL]"
+                    data-caption="Your caption here">
+                <img src="[URL]"
+                     alt="Brief description of what the photo shows"
+                     loading="lazy">
+            </figure>
+
+
+            <!-- PHOTO 2 — replace [URL] with your Cloudinary link -->
+            <figure class="gallery-item"
+                    data-src="[URL]"
+                    data-caption="Your caption here">
+                <img src="[URL]"
+                     alt="Brief description of what the photo shows"
+                     loading="lazy">
+            </figure>
+
+
+            <!-- PHOTO 3 — replace [URL] with your Cloudinary link -->
+            <figure class="gallery-item"
+                    data-src="[URL]"
+                    data-caption="Your caption here">
+                <img src="[URL]"
+                     alt="Brief description of what the photo shows"
+                     loading="lazy">
+            </figure>
+
+
+            <!-- ADD MORE PHOTOS BY COPYING A <figure> BLOCK ABOVE -->
+
+
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Oliver Brand</p>
+    </footer>
+
+
+    <!-- ============================================================
+         LIGHTBOX (full-screen photo viewer)
+         You do not need to edit anything below this line.
+         ============================================================ -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <button class="lightbox-prev" id="lightbox-prev">&#8592;</button>
+        <button class="lightbox-next" id="lightbox-next">&#8594;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img">
+            <p class="lightbox-caption" id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

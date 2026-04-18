@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliver Brand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============================================================
+         NAVIGATION BAR
+         To add a new trip page: copy one of the <li> lines below
+         and change the href and link text to match your new page.
+         ============================================================ -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">Oliver Brand</a>
+        <ul class="nav-links">
+            <li><a href="boa.html">Bradford on Avon</a></li>
+            <!-- ADD NEW TRIP LINKS HERE — copy the line above -->
+        </ul>
+    </nav>
+
+
+    <!-- ============================================================
+         LANDING PAGE PHOTO GRID
+         This page shows your curated selection of favourite images.
+         You choose which photos appear here — they do not have to
+         match your trip pages exactly.
+
+         HOW TO ADD A PHOTO:
+         1. Upload the photo to Cloudinary
+         2. Copy the URL Cloudinary gives you
+         3. Copy one <figure> block below
+         4. Paste your Cloudinary URL into BOTH places marked [URL]
+         5. Write a short caption in the data-caption field
+         6. Write a brief description in the alt field (for accessibility)
+
+         The photos will appear in the order listed below.
+         To change the order, move a <figure> block up or down.
+         To remove a photo, delete its entire <figure> block.
+         ============================================================ -->
+    <main class="gallery-container">
+        <div class="gallery">
+
+
+            <!-- PHOTO 1 — replace [URL] with your Cloudinary link -->
+            <figure class="gallery-item"
+                    data-src="[URL]"
+                    data-caption="Your caption here">
+                <img src="[URL]"
+                     alt="Brief description of what the photo shows"
+                     loading="lazy">
+            </figure>
+
+
+            <!-- PHOTO 2 — replace [URL] with your Cloudinary link -->
+            <figure class="gallery-item"
+                    data-src="[URL]"
+                    data-caption="Your caption here">
+                <img src="[URL]"
+                     alt="Brief description of what the photo shows"
+                     loading="lazy">
+            </figure>
+
+
+            <!-- PHOTO 3 — replace [URL] with your Cloudinary link -->
+            <figure class="gallery-item"
+                    data-src="[URL]"
+                    data-caption="Your caption here">
+                <img src="[URL]"
+                     alt="Brief description of what the photo shows"
+                     loading="lazy">
+            </figure>
+
+
+            <!-- ADD MORE PHOTOS BY COPYING A <figure> BLOCK ABOVE -->
+
+
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Oliver Brand</p>
+    </footer>
+
+
+    <!-- ============================================================
+         LIGHTBOX (full-screen photo viewer)
+         You do not need to edit anything below this line.
+         ============================================================ -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <button class="lightbox-prev" id="lightbox-prev">&#8592;</button>
+        <button class="lightbox-next" id="lightbox-next">&#8594;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img">
+            <p class="lightbox-caption" id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
